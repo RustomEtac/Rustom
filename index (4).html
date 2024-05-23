@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- =====BOX ICONS===== -->
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+    <title>Etac | Portfolio Website</title>
+    <style>
+        body {
+            background-image: url(picandvid/bac.jpg);
+        }
+    </style>
+</head>
+<body>
+    <!--===== HEADER =====-->
+    <header class="l-header">
+        <nav class="nav bd-grid">
+            <div>
+                <a href="#" class="nav__logo">Welcome!</a>
+            </div>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                    <li class="nav__item"><a href="#education" class="nav__link">Education</a></li>
+                    <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+                    <li class="nav__item"><a href="#hobbies" class="nav__link">Hobbies</a></li>
+                    <li class="nav__item"><a href="#photo" class="nav__link">Photo</a></li>
+                    <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bx-menu'></i>
+            </div>
+        </nav>
+    </header>
+
+    <main class="l-main">
+        <!--===== HOME =====-->
+        <section class="home bd-grid" id="home">
+            <div class="home__data">
+                <h1 class="home__title">Hi,<br>I'm <span class="home__title-color">Rustom</span><br>your IT professor</h1>
+                <a href="./contact.html" target="_blank" class="button">Contact Me!</a>
+            </div>
+
+            <div class="home__social">
+                <a href="" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
+                <a href="" class="home__social-icon"><i class='bx bxl-behance' ></i></a>
+                <a href="" class="home__social-icon"><i class='bx bxl-github' ></i></a>
+            </div>
+
+            <div class="home__img">
+                <svg class="home__blob" viewBox="0 0 479 467" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <mask id="mask0" mask-type="alpha">
+                        <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
+                    </mask>
+                    <g mask="url(#mask0)">
+                        <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
+                        <image class="home__blob-img" x="70" y="0" href="picandvid/perfil-removebg-preview.png"/>
+                    </g>
+                </svg>
+            </div>
+        </section>
+
+        <!--===== ABOUT =====-->
+        <section class="about section" id="about">
+            <h2 class="section-title">About</h2>
+            <div class="about__container bd-grid">
+                <div class="about__img">
+                    <img src="picandvid/about.jpg" alt="About Image">
+                </div>
+                <div>
+                    <h2 class="about__subtitle">I'm Rustom Etac</h2>
+                    <p class="about__text">an IT enthusiast turned professor on a mission to inspire the next generation of tech wizards. Armed with a Bachelor's in Information Technology and two years spent coding in the real world, I've landed in the classroom to share what I've learned.
+                        As your friendly neighborhood IT professor, I'm all about making the complex simple and sparking that "aha!" moment in my students' minds. Whether it's unraveling the mysteries of JavaScript or diving into the world of web technologies, I'm here to guide you through it all.
+                        Let's embark on this digital journey together!
+                        Catch you in class,<br>
+                        Tom</p>
+                </div>
+                <div class="video-container" style="display:none;">
+                    <video id="about-video" controls>
+                        <source src="picandvid/aboutvid.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <button id="toggle-video-btn" onclick="toggleVideo()">Show Video</button>
+            </div>
+        </section>
+        
+        
+
+        <!--===== EDUCATION =====-->
+        <section class="education section" id="education">
+            <h2 class="section-title">Education</h2>
+            <div class="education__container bd-grid">
+                <div class="left-education">
+                    <ul class="education__list">
+                        <li class="education__item">
+                            <strong>Degree:</strong><br>
+                            <span>General Academic Strand</span><br>
+                            <strong>Institution:</strong><br>
+                            <span>Tarabucan National High School</span><br>
+                            <strong>Year:</strong><br><span>2016 - 2021</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="right-education">
+                    <ul class="education__list">
+                        <li class="education__item">
+                            <strong>Degree:</strong><br>
+                            <span>Bachelor of Science in Information Technology</span><br>
+                            <strong>Institution:</strong><br>
+                            <span>Northwest Samar State University</span><br>
+                            <strong>Year:</strong><br><span>2022-2026</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        
+        
+
+        <!--===== SKILLS =====-->
+        <section class="skills section" id="skills">
+            <h2 class="section-title">Skills</h2>
+            <div class="skills__container bd-grid">
+                <div class="skills__content">
+                    <h3 class="skills__subtitle">Programming Languages</h3>
+                    <ul class="skills__list">
+                        <li>JavaScript</li>
+                        <li>Python</li>
+                        <li>Java</li>
+                        <li>HTML/CSS</li>
+                    </ul>
+                </div>
+                <div class="skills__graph">
+                    <h3 class="skills__subtitle">Proficiency Levels</h3>
+                    <div class="bar-graph">
+                        <!-- Your proficiency level bars -->
+                        <div class="bar-fill" style="width: 80%;"></div> <!-- Adjust the width percentage based on proficiency -->
+                        <div class="bar-label">JavaScript</div>
+                        <div class="bar">
+                            <div class="bar-fill" style="width: 50%;"></div> <!-- Adjust the width percentage based on proficiency -->
+                        </div>
+                        <div class="bar-label">Python</div>
+                        <div class="bar">
+                            <div class="bar-fill" style="width: 65%;"></div> <!-- Adjust the width percentage based on proficiency -->
+                        </div>
+                        <div class="bar-label">Java</div>
+                        <div class="bar">
+                            <div class="bar-fill" style="width: 55%;"></div> <!-- Adjust the width percentage based on proficiency -->
+                        </div>
+                        <div class="bar-label">HTML/CSS</div>
+                        <div class="bar">
+                            <div class="bar-fill" style="width: 85%;"></div> <!-- Adjust the width percentage based on proficiency -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+                
+            
+        <!--===== HOBBIES =====-->
+        <section class="hobbies section" id="hobbies">
+            <h2 class="section-title">Hobbies</h2>
+            <div class="hobbies__container bd-grid">
+                <!-- Dancing -->
+                <div class="hobbies__item">
+                    <h3 class="hobbies__subtitle">Dancing</h3>
+                    <div class="hobbies__video-container">
+                        <video controls>
+                            <source src="picandvid/hodance.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                </div>
+                <!-- Gaming -->
+                <div class="hobbies__item">
+                    <h3 class="hobbies__subtitle">Gaming</h3>
+                    <div class="hobbies__games">
+                        <!-- First image with larger size -->
+                        <img src="picandvid/ML.jpg" alt="Dancing Video" class="hobbies__game1">
+                   </div>
+                    <div class="hobbies__games">
+                        <!-- Second image with regular size -->
+                        <img src="picandvid/LOL.jpg" alt="Game Logo" class="hobbies__game2">
+                    </div>
+                </div>
+                <!-- Reading -->
+                <div class="hobbies__item">
+                    <h3 class="hobbies__subtitle">Reading</h3>
+                    <p class="hobbies__text">I enjoy diving into various genres, from enhancing my skills to immersing myself in romance, horror, and action-packed stories.</p>
+                </div>
+            </div>
+        </section>
+        
+
+        <!--===== PHOTO =====-->
+        <section class="photo section" id="photo">
+            <h2 class="section-title">Photo</h2>
+            <div class="photo__container bd-grid">
+                <div class="photo__img">
+                    <img src="picandvid/gradpic.jpg" alt="Graduation Picture">
+                    <p>Graduation Picture</p>
+                </div>
+            </div>
+        </section>
+        
+
+        <!--===== CONTACT =====-->
+        <section class="contact section" id="contact">
+            <h2 class="section-title">Contact</h2>
+            <div class="contact__container bd-grid">
+                <form action="" class="contact__form">
+                    <input type="text" placeholder="Name" class="contact__input">
+                    <input type="mail" placeholder="Email" class="contact__input">
+                    <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
+                    <input type="button" value="Send" class="contact__button button">
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!--===== FOOTER =====-->
+    <footer class="footer">
+        <p class="footer__title">Rustom</p>
+        <div class="footer__social">
+            <a href="#" class="footer__icon"><i class='bx bxl-facebook' ></i></a>
+            <a href="#" class="footer__icon"><i class='bx bxl-instagram' ></i></a>
+            <a href="#" class="footer__icon"><i class='bx bxl-twitter' ></i></a>
+        </div>
+        <p class="footer__copy">&#169; All rights reserved</p>
+    </footer>
+
+    <!--===== SCROLL REVEAL =====-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!--===== MAIN JS =====-->
+    <script src="script.js"></script>
+</body>
+</html>
